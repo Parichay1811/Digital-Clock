@@ -1,0 +1,37 @@
+/* style.css */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://images8.alphacoders.com/614/614833.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-color 1s ease;
+  color: aliceblue;
+  font-family: Arial, sans-serif;
+}
+
+.clock-container {
+  text-align: center;
+}
+
+#clock {
+  font-size: 70px;
+  margin: 10px 0;
+}
+
+#fact,
+#weather,
+#timezone-display {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
