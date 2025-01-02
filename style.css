@@ -1,37 +1,72 @@
-/* style.css */
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-image: url("https://images8.alphacoders.com/614/614833.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: background-color 1s ease;
-  color: aliceblue;
-  font-family: Arial, sans-serif;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./assets/wallpaperflare.com_wallpaper\ \(2\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    
+}
+#time-container{
+    /* width: 10%; */
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    /* background-color: rgba(101, 101, 101, 0.128); */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#time{
+    font-size: 100px;
+    color: rgba(196, 193, 189, 0.567);
+}
+#time-format{
+    position: relative;
+    top: -20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(196, 193, 189, 0.567);
 }
 
-.clock-container {
-  text-align: center;
+@media screen and (max-width: 768px){
+    #time{
+        font-size: 70px;
+    }
+    #time-format{
+        font-size: 20px;
+        position: relative;
+        top: -10px;
+    }
+    body{
+        background-image: url('./assets/2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
-
-#clock {
-  font-size: 70px;
-  margin: 10px 0;
-}
-
-#fact,
-#weather,
-#timezone-display {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-button {
-  margin-top: 20px;
-  padding: 10px 15px;
-  font-size: 16px;
-  cursor: pointer;
+@media screen and (max-width: 480px){
+    #time{
+        font-size: 50px;
+        color: rgb(243, 243, 243);
+    }
+    #time-format{
+        font-size: 15px;
+        color: rgb(243, 243, 243);
+        position: relative;
+        top: -5px;
+    }
+    body{
+        background-image: url('./assets/3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
 }
